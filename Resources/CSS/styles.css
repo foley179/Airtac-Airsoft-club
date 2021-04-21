@@ -26,6 +26,7 @@ h1, h2 {
 
 /* header */
 header {
+    width: 100%;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -41,6 +42,7 @@ header {
 
 nav {
     margin-top: 25px;
+    padding-right: 20px;
     justify-self: end;
 }
 
@@ -52,12 +54,13 @@ nav a {
 
 /* banner */
 .banner h1 {
-    margin-bottom: 50px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
 }
 
 .banner p {
     line-height: 1.2rem;
-    margin-bottom: 50px;
+    margin-bottom: 2rem;
 }
 
 /* gallery */
@@ -70,8 +73,9 @@ nav a {
 }
 
 .gallery figure {
-    width: 390px;
-    height: 260px;
+    width: 45%;
+    height: 45%;
+    margin: 10px 0;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -89,7 +93,7 @@ nav a {
 
 /* additional */
 .additional h2 {
-    margin: 30px auto;
+    margin: 1.5rem auto;
     padding-top: 15px;
 }
 
@@ -111,10 +115,22 @@ nav a {
     padding: 10px 20px;
 }
 
-
-
 /* use this and viewport meta to change display if screen
 size is smaller (laptop, tablet, mobile) */
-@media only screen and (max-width: 1024px) {}	
-@media only screen and (max-width: 768px) {}
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 1024px) {
+    body, main, .gallery {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .gallery figure {
+        width: 100%;
+        height: 95%;
+    }
+}

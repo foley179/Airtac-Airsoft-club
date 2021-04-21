@@ -1,5 +1,5 @@
-# Birch Glass
-> A project page for a small company.
+# Airtac Airsoft Club
+> A project page for a fictional club.
 
 ## Table of contents
 * [General info](#general-info)
@@ -7,7 +7,7 @@
 * [Status](#status)
 
 ## General info
-A basic company webpage.
+A basic fictional club webpage.
 
 ## Technologies
 - HTML
